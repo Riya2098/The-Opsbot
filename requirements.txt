@@ -1,0 +1,6 @@
+flask
+openai
+slack_sdk
+prometheus-api-client
+python-dotenv
+streamlit
