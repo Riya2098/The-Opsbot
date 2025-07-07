@@ -15,14 +15,14 @@ with open("rca.txt") as f:
     analysis = f.read()
 
 message = f"""
-*🚨 High CPU Alert*
+*High CPU Alert*
 *Root Cause Analysis:*\n{analysis}
-*✅ Action Taken:* Auto-remediated (container/service restarted)
-*🕒 Timestamp:* {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+*Action Taken:* Auto-remediated (container/service restarted)
+*Timestamp:* {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 """
 
 try:
     client.chat_postMessage(channel=channel, text=message)
-    print("📩 Slack notification sent.")
+    print("Slack notification sent successfully")
 except SlackApiError as e:
     print(f"Slack error: {e.response['error']}")

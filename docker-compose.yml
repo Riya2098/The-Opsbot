@@ -5,8 +5,8 @@ services:
   prometheus:
     image: prom/prometheus
     volumes:
-      - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - /etc/prometheus/alert_rules.yml:/etc/prometheus/alert_rules.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./alert_rules.yml:/etc/prometheus/alert_rules.yml
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     ports:
@@ -15,7 +15,7 @@ services:
   alertmanager:
     image: prom/alertmanager
     volumes:
-      - /etc/prometheus/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+      - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
     command:
       - '--config.file=/etc/alertmanager/alertmanager.yml'
     ports:
@@ -34,16 +34,27 @@ services:
       - "5000:5000"
     volumes:
       - ./agent:/app/agent
+      - ./webhook:/app
+      - /var/log:/var/log:ro
+      - ./webhook/incident_logs.txt:/app/incident_logs.txt
+      - /var/run/docker.sock:/var/run/docker.sock
     env_file:
       - .env
     restart: always
 
   agent:
-    image: python:3.9-slim
+    build:
+      context: ./agent
+      dockerfile: Dockerfile
     working_dir: /app
     volumes:
       - ./agent:/app
-    command: python3 opsbot.py
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./webhook/incident_logs.txt:/app/incident_logs.txt
+      - /var/log:/var/log:ro
+    env_file:
+      - .env
     depends_on:
       - prometheus
       - webhook
+

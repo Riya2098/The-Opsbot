@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/alert', methods=['POST'])
 def alert():
     data = request.json
-    print("🚨 Received Alert:", data)
+    print("Received Alert:", data)
 
     # Calculate time window (last 2 minutes)
     now = datetime.utcnow()
@@ -23,14 +23,14 @@ def alert():
     with open("incident_logs.txt", "w") as f:
         f.write(logs)
 
-    print("✅ Logs saved to incident_logs.txt")
+    print("Logs saved to incident_logs.txt")
 
     # Trigger LLM-based log analysis
     try:
-        subprocess.run(["python3", "analyze.py"], check=True)
-        print("🧠 analyze.py executed.")
+        subprocess.run(["python3", "agent/analyze.py"], check=True)
+        print("analyze.py executed.")
     except subprocess.CalledProcessError as e:
-        print(f"❌ Error running analyze.py: {e}")
+        print(f"Error running analyze.py: {e}")
 
     return '', 200
 

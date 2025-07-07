@@ -2,7 +2,8 @@ import subprocess
 import time
 from prometheus_api_client import PrometheusConnect
 
-prom = PrometheusConnect(url="http://localhost:9090", disable_ssl=True)
+#prom = PrometheusConnect(url="http://localhost:9090", disable_ssl=True)
+prom = PrometheusConnect(url="http://prometheus:9090", disable_ssl=True)
 
 def get_cpu():
     query = '100 - (avg by(instance)(rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100)'
@@ -11,9 +12,9 @@ def get_cpu():
 
 while True:
     cpu = get_cpu()
-    print(f"🔥 CPU Usage: {cpu:.2f}%")
+    print(f"CPU Usage: {cpu:.2f}%")
     if cpu > 80:
-        print("⚠️ High CPU detected, triggering analysis + remediation...")
+        print("High CPU detected, triggering analysis + remediation...")
         subprocess.run(["python3", "analyze.py"])
         subprocess.run(["python3", "remediate.py"])
         subprocess.run(["python3", "notify.py"])

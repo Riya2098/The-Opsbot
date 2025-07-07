@@ -1,6 +1,8 @@
 flask
-openai
+openai==0.28
 slack_sdk
 prometheus-api-client
 python-dotenv
 streamlit
+prometheus_api_client
+requests

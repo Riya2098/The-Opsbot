@@ -1,0 +1,206 @@
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: docker-5aeba49ccaee0612ddc76a2b44e15b06dd520169cd299e97bd2b93f25ad9c6ae.scope: Deactivated successfully.
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: docker-5a7cf947a46838cd7ecdd2b7c3725a3ef64530b0d5115de2c0eeaf039488727f.scope: Deactivated successfully.
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.721223570Z" level=info msg="shim disconnected" id=5a7cf947a46838cd7ecdd2b7c3725a3ef64530b0d5115de2c0eeaf039488727f namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.721855662Z" level=warning msg="cleaning up after shim disconnected" id=5a7cf947a46838cd7ecdd2b7c3725a3ef64530b0d5115de2c0eeaf039488727f namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.721877711Z" level=info msg="cleaning up dead shim" namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:27.724214682Z" level=info msg="ignoring event" container=5aeba49ccaee0612ddc76a2b44e15b06dd520169cd299e97bd2b93f25ad9c6ae module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jul  6 22:36:27 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:27.725703265Z" level=info msg="ignoring event" container=5a7cf947a46838cd7ecdd2b7c3725a3ef64530b0d5115de2c0eeaf039488727f module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.729547490Z" level=info msg="shim disconnected" id=5aeba49ccaee0612ddc76a2b44e15b06dd520169cd299e97bd2b93f25ad9c6ae namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.729609555Z" level=warning msg="cleaning up after shim disconnected" id=5aeba49ccaee0612ddc76a2b44e15b06dd520169cd299e97bd2b93f25ad9c6ae namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.729622503Z" level=info msg="cleaning up dead shim" namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.764636393Z" level=warning msg="cleanup warnings time=\"2025-07-06T22:36:27Z\" level=warning msg=\"failed to remove runc container\" error=\"runc did not terminate successfully: exit status 255: \" runtime=io.containerd.runc.v2\n" namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:27.766350475Z" level=warning msg="cleanup warnings time=\"2025-07-06T22:36:27Z\" level=warning msg=\"failed to remove runc container\" error=\"runc did not terminate successfully: exit status 255: \" runtime=io.containerd.runc.v2\n" namespace=moby
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.626153] br-b891703e14c7: port 3(vethb617631) entered disabled state
+Jul  6 22:36:27 ip-172-31-5-213 systemd-networkd[323]: vethb617631: Lost carrier
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.629871] veth04dec01: renamed from eth0
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.638482] vethfa4eb04: renamed from eth0
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.640902] br-b891703e14c7: port 4(veth79a6319) entered disabled state
+Jul  6 22:36:27 ip-172-31-5-213 systemd-networkd[323]: veth79a6319: Lost carrier
+Jul  6 22:36:27 ip-172-31-5-213 systemd-udevd[10442]: Using default interface naming scheme 'v249'.
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 103 seen, reloading interface list
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.648947] br-b891703e14c7: port 3(vethb617631) entered disabled state
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.649356] vethb617631 (unregistering): left allmulticast mode
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.649360] vethb617631 (unregistering): left promiscuous mode
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.649365] br-b891703e14c7: port 3(vethb617631) entered disabled state
+Jul  6 22:36:27 ip-172-31-5-213 systemd-networkd[323]: vethb617631: Link DOWN
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.656787] br-b891703e14c7: port 4(veth79a6319) entered disabled state
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.656971] veth79a6319 (unregistering): left allmulticast mode
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.656975] veth79a6319 (unregistering): left promiscuous mode
+Jul  6 22:36:27 ip-172-31-5-213 kernel: [ 5311.656980] br-b891703e14c7: port 4(veth79a6319) entered disabled state
+Jul  6 22:36:27 ip-172-31-5-213 systemd-networkd[323]: veth79a6319: Link DOWN
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: run-docker-netns-b20e2bd721fa.mount: Deactivated successfully.
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: run-docker-netns-cf128b0123fe.mount: Deactivated successfully.
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-2b83e4b6f4a27635dcb5cf41c72646c2c736b5c84f599589523649d0936b82dc-merged.mount: Deactivated successfully.
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 103 seen even after reload
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 105 seen, reloading interface list
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-cfcbbba533b0f223942629f14c45916826a4b75374b8409fabf1faf7ae212a47-merged.mount: Deactivated successfully.
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 105 seen even after reload
+Jul  6 22:36:27 ip-172-31-5-213 networkctl[10456]: Interface "vethb617631" not found.
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: networkd-dispatcher.service: Got notification message from PID 10456, but reception only permitted for main PID 374
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Failed to get interface "vethb617631" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--', 'vethb617631']' returned non-zero exit status 1.
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 103 seen, reloading interface list
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 103 seen even after reload
+Jul  6 22:36:27 ip-172-31-5-213 networkctl[10464]: Interface "veth79a6319" not found.
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Failed to get interface "veth79a6319" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--', 'veth79a6319']' returned non-zero exit status 1.
+Jul  6 22:36:27 ip-172-31-5-213 systemd[1]: networkd-dispatcher.service: Got notification message from PID 10464, but reception only permitted for main PID 374
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 105 seen, reloading interface list
+Jul  6 22:36:27 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 105 seen even after reload
+Jul  6 22:36:37 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:37.675512666Z" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=672811848cc510ad3a82c2b2a719119c136b37e118819500b44de0c8559a73ae
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: docker-672811848cc510ad3a82c2b2a719119c136b37e118819500b44de0c8559a73ae.scope: Deactivated successfully.
+Jul  6 22:36:37 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:37.718268520Z" level=info msg="ignoring event" container=672811848cc510ad3a82c2b2a719119c136b37e118819500b44de0c8559a73ae module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jul  6 22:36:37 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:37.719842202Z" level=info msg="shim disconnected" id=672811848cc510ad3a82c2b2a719119c136b37e118819500b44de0c8559a73ae namespace=moby
+Jul  6 22:36:37 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:37.720475274Z" level=warning msg="cleaning up after shim disconnected" id=672811848cc510ad3a82c2b2a719119c136b37e118819500b44de0c8559a73ae namespace=moby
+Jul  6 22:36:37 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:37.720496474Z" level=info msg="cleaning up dead shim" namespace=moby
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.556600] br-b891703e14c7: port 5(veth5cb6ae5) entered disabled state
+Jul  6 22:36:37 ip-172-31-5-213 systemd-networkd[323]: veth5cb6ae5: Lost carrier
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.557905] veth8966478: renamed from eth0
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 107 seen, reloading interface list
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.570620] br-b891703e14c7: port 5(veth5cb6ae5) entered disabled state
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.570868] veth5cb6ae5 (unregistering): left allmulticast mode
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.570873] veth5cb6ae5 (unregistering): left promiscuous mode
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.570877] br-b891703e14c7: port 5(veth5cb6ae5) entered disabled state
+Jul  6 22:36:37 ip-172-31-5-213 systemd-networkd[323]: veth5cb6ae5: Link DOWN
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: run-docker-netns-db4511867770.mount: Deactivated successfully.
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-dae0864a9aa3b557188d03105b70003d07d20db9ea519337e40838c00833cbb7-merged.mount: Deactivated successfully.
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 107 seen even after reload
+Jul  6 22:36:37 ip-172-31-5-213 networkctl[10502]: Interface "veth5cb6ae5" not found.
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: networkd-dispatcher.service: Got notification message from PID 10502, but reception only permitted for main PID 374
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Failed to get interface "veth5cb6ae5" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--', 'veth5cb6ae5']' returned non-zero exit status 1.
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 107 seen, reloading interface list
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 107 seen even after reload
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: docker-a0685b329b6d644016b8c495e07296ecca035c08e52a59d91df67a64e4b3435f.scope: Deactivated successfully.
+Jul  6 22:36:37 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:37.893581189Z" level=info msg="ignoring event" container=a0685b329b6d644016b8c495e07296ecca035c08e52a59d91df67a64e4b3435f module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jul  6 22:36:37 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:37.895774673Z" level=info msg="shim disconnected" id=a0685b329b6d644016b8c495e07296ecca035c08e52a59d91df67a64e4b3435f namespace=moby
+Jul  6 22:36:37 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:37.896312286Z" level=warning msg="cleaning up after shim disconnected" id=a0685b329b6d644016b8c495e07296ecca035c08e52a59d91df67a64e4b3435f namespace=moby
+Jul  6 22:36:37 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:37.896526813Z" level=info msg="cleaning up dead shim" namespace=moby
+Jul  6 22:36:37 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:37.913126877Z" level=warning msg="cleanup warnings time=\"2025-07-06T22:36:37Z\" level=warning msg=\"failed to remove runc container\" error=\"runc did not terminate successfully: exit status 255: \" runtime=io.containerd.runc.v2\n" namespace=moby
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.753423] br-b891703e14c7: port 2(vethe6a33b7) entered disabled state
+Jul  6 22:36:37 ip-172-31-5-213 systemd-networkd[323]: vethe6a33b7: Lost carrier
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.755346] veth43fe53a: renamed from eth0
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 101 seen, reloading interface list
+Jul  6 22:36:37 ip-172-31-5-213 systemd-udevd[10496]: Using default interface naming scheme 'v249'.
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.765713] br-b891703e14c7: port 2(vethe6a33b7) entered disabled state
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.765886] vethe6a33b7 (unregistering): left allmulticast mode
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.765890] vethe6a33b7 (unregistering): left promiscuous mode
+Jul  6 22:36:37 ip-172-31-5-213 kernel: [ 5321.765894] br-b891703e14c7: port 2(vethe6a33b7) entered disabled state
+Jul  6 22:36:37 ip-172-31-5-213 systemd-networkd[323]: vethe6a33b7: Link DOWN
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: run-docker-netns-edff45ad7fb8.mount: Deactivated successfully.
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-d88c2dd5d779ac865309c5fecdb24a61dd419540cd27cd38b9fe219d2b2f351c-merged.mount: Deactivated successfully.
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 101 seen even after reload
+Jul  6 22:36:37 ip-172-31-5-213 networkctl[10552]: Interface "vethe6a33b7" not found.
+Jul  6 22:36:37 ip-172-31-5-213 systemd[1]: networkd-dispatcher.service: Got notification message from PID 10552, but reception only permitted for main PID 374
+Jul  6 22:36:37 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Failed to get interface "vethe6a33b7" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--', 'vethe6a33b7']' returned non-zero exit status 1.
+Jul  6 22:36:38 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 101 seen, reloading interface list
+Jul  6 22:36:38 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 101 seen even after reload
+Jul  6 22:36:47 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:47.867446352Z" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=5407ca104de5aa3bc2750095a1e1cdcf02e729b121360e160c1e2b118df33a61
+Jul  6 22:36:47 ip-172-31-5-213 systemd[1]: docker-5407ca104de5aa3bc2750095a1e1cdcf02e729b121360e160c1e2b118df33a61.scope: Deactivated successfully.
+Jul  6 22:36:47 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:47.908398882Z" level=info msg="shim disconnected" id=5407ca104de5aa3bc2750095a1e1cdcf02e729b121360e160c1e2b118df33a61 namespace=moby
+Jul  6 22:36:47 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:47.908812934Z" level=warning msg="cleaning up after shim disconnected" id=5407ca104de5aa3bc2750095a1e1cdcf02e729b121360e160c1e2b118df33a61 namespace=moby
+Jul  6 22:36:47 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:47.908835918Z" level=info msg="cleaning up dead shim" namespace=moby
+Jul  6 22:36:47 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:47.910623127Z" level=info msg="ignoring event" container=5407ca104de5aa3bc2750095a1e1cdcf02e729b121360e160c1e2b118df33a61 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jul  6 22:36:47 ip-172-31-5-213 containerd[386]: time="2025-07-06T22:36:47.927995557Z" level=warning msg="cleanup warnings time=\"2025-07-06T22:36:47Z\" level=warning msg=\"failed to remove runc container\" error=\"runc did not terminate successfully: exit status 255: \" runtime=io.containerd.runc.v2\n" namespace=moby
+Jul  6 22:36:47 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:36:47.929532061Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=5407ca104de5aa3bc2750095a1e1cdcf02e729b121360e160c1e2b118df33a61 daemonShuttingDown=false error="restart canceled" execDuration=1m55.496980327s exitStatus="{137 2025-07-06 22:36:47.890502674 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+Jul  6 22:36:47 ip-172-31-5-213 kernel: [ 5331.781819] br-b891703e14c7: port 1(vethb3878bb) entered disabled state
+Jul  6 22:36:47 ip-172-31-5-213 systemd-networkd[323]: vethb3878bb: Lost carrier
+Jul  6 22:36:47 ip-172-31-5-213 kernel: [ 5331.783825] vethd380e0b: renamed from eth0
+Jul  6 22:36:47 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 99 seen, reloading interface list
+Jul  6 22:36:47 ip-172-31-5-213 kernel: [ 5331.796946] br-b891703e14c7: port 1(vethb3878bb) entered disabled state
+Jul  6 22:36:47 ip-172-31-5-213 kernel: [ 5331.797164] vethb3878bb (unregistering): left allmulticast mode
+Jul  6 22:36:47 ip-172-31-5-213 kernel: [ 5331.797168] vethb3878bb (unregistering): left promiscuous mode
+Jul  6 22:36:47 ip-172-31-5-213 kernel: [ 5331.797173] br-b891703e14c7: port 1(vethb3878bb) entered disabled state
+Jul  6 22:36:47 ip-172-31-5-213 systemd-udevd[10592]: Using default interface naming scheme 'v249'.
+Jul  6 22:36:47 ip-172-31-5-213 systemd-networkd[323]: vethb3878bb: Link DOWN
+Jul  6 22:36:48 ip-172-31-5-213 systemd[1]: run-docker-netns-d350b13bda84.mount: Deactivated successfully.
+Jul  6 22:36:48 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-6747e78157dde5ffda96615ece043d769c51837db033d776bb341f176f9b19a4-merged.mount: Deactivated successfully.
+Jul  6 22:36:48 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 99 seen even after reload
+Jul  6 22:36:48 ip-172-31-5-213 networkctl[10598]: Interface "vethb3878bb" not found.
+Jul  6 22:36:48 ip-172-31-5-213 systemd[1]: networkd-dispatcher.service: Got notification message from PID 10598, but reception only permitted for main PID 374
+Jul  6 22:36:48 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Failed to get interface "vethb3878bb" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--', 'vethb3878bb']' returned non-zero exit status 1.
+Jul  6 22:36:48 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 99 seen, reloading interface list
+Jul  6 22:36:48 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Unknown interface index 99 seen even after reload
+Jul  6 22:36:48 ip-172-31-5-213 systemd-networkd[323]: br-b891703e14c7: Link DOWN
+Jul  6 22:36:48 ip-172-31-5-213 systemd-networkd[323]: br-b891703e14c7: Lost carrier
+Jul  6 22:36:48 ip-172-31-5-213 networkctl[10605]: Interface "br-b891703e14c7" not found.
+Jul  6 22:36:48 ip-172-31-5-213 systemd[1]: networkd-dispatcher.service: Got notification message from PID 10605, but reception only permitted for main PID 374
+Jul  6 22:36:48 ip-172-31-5-213 networkd-dispatcher[374]: ERROR:Failed to get interface "br-b891703e14c7" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--', 'br-b891703e14c7']' returned non-zero exit status 1.
+Jul  6 22:37:00 ip-172-31-5-213 systemd[1]: var-lib-docker-tmp-buildkit\x2dmount2405924649.mount: Deactivated successfully.
+Jul  6 22:37:00 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-cukum6b0u82nqujhjit3o9foq-merged.mount: Deactivated successfully.
+Jul  6 22:37:01 ip-172-31-5-213 systemd[1]: var-lib-docker-tmp-buildkit\x2dmount5296160.mount: Deactivated successfully.
+Jul  6 22:37:04 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 109 seen, reloading interface list
+Jul  6 22:37:04 ip-172-31-5-213 systemd-udevd[10747]: Using default interface naming scheme 'v249'.
+Jul  6 22:37:04 ip-172-31-5-213 systemd-networkd[323]: br-285ca4195c4f: Link UP
+Jul  6 22:37:04 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-1ddaa6d1894ee8c002f53dc894c491c7ff26344558870f7d7e94f3133713aaef\x2dinit-merged.mount: Deactivated successfully.
+Jul  6 22:37:04 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-9b6c286c67f11608efae52fb006a0a707ee9e662d091ec50033a4207319b5552\x2dinit-merged.mount: Deactivated successfully.
+Jul  6 22:37:04 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 110 seen, reloading interface list
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.409370] br-285ca4195c4f: port 1(veth7e75d63) entered blocking state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.409378] br-285ca4195c4f: port 1(veth7e75d63) entered disabled state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.409395] veth7e75d63: entered allmulticast mode
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.410671] veth7e75d63: entered promiscuous mode
+Jul  6 22:37:04 ip-172-31-5-213 systemd-networkd[323]: veth7e75d63: Link UP
+Jul  6 22:37:04 ip-172-31-5-213 systemd-udevd[10758]: Using default interface naming scheme 'v249'.
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.432210] br-285ca4195c4f: port 2(veth7d413d2) entered blocking state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.432231] br-285ca4195c4f: port 2(veth7d413d2) entered disabled state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.432257] veth7d413d2: entered allmulticast mode
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.432310] veth7d413d2: entered promiscuous mode
+Jul  6 22:37:04 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:37:04.626470881Z" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Jul  6 22:37:04 ip-172-31-5-213 systemd-networkd[323]: veth7d413d2: Link UP
+Jul  6 22:37:04 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 114 seen, reloading interface list
+Jul  6 22:37:04 ip-172-31-5-213 systemd-udevd[10808]: Using default interface naming scheme 'v249'.
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.501936] br-285ca4195c4f: port 3(veth171d80d) entered blocking state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.501945] br-285ca4195c4f: port 3(veth171d80d) entered disabled state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.501961] veth171d80d: entered allmulticast mode
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.502012] veth171d80d: entered promiscuous mode
+Jul  6 22:37:04 ip-172-31-5-213 systemd-networkd[323]: veth171d80d: Link UP
+Jul  6 22:37:04 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:37:04.705817035Z" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.554744] br-285ca4195c4f: port 4(veth46330ce) entered blocking state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.554753] br-285ca4195c4f: port 4(veth46330ce) entered disabled state
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.555609] veth46330ce: entered allmulticast mode
+Jul  6 22:37:04 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:37:04.746483962Z" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Jul  6 22:37:04 ip-172-31-5-213 kernel: [ 5348.558940] veth46330ce: entered promiscuous mode
+Jul  6 22:37:04 ip-172-31-5-213 systemd-networkd[323]: veth46330ce: Link UP
+Jul  6 22:37:04 ip-172-31-5-213 systemd-udevd[10818]: Using default interface naming scheme 'v249'.
+Jul  6 22:37:04 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 116 seen, reloading interface list
+Jul  6 22:37:04 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:37:04.807838396Z" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Jul  6 22:37:05 ip-172-31-5-213 systemd-udevd[10830]: Using default interface naming scheme 'v249'.
+Jul  6 22:37:05 ip-172-31-5-213 systemd-udevd[10822]: Using default interface naming scheme 'v249'.
+Jul  6 22:37:05 ip-172-31-5-213 systemd[1]: Started libcontainer container 5e6033869de52ba00d31a43c0da761c79e5c73b8445c2af58deb1ee35c986a36.
+Jul  6 22:37:05 ip-172-31-5-213 systemd[1]: Started libcontainer container 51cc8c923cf81e8de6d510fb7f402bfb41104bfde1bc3130227ebb433b1167b8.
+Jul  6 22:37:05 ip-172-31-5-213 systemd[1]: Started libcontainer container 3bef29ae49d8245d064135ed30efdaf246cdcde54f3ef394f43183b587c07323.
+Jul  6 22:37:05 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-22a427c4ffcfc996d86836f55ef9ff31a565e97ae3a107a812e188f54b75e97a\x2dinit-merged.mount: Deactivated successfully.
+Jul  6 22:37:05 ip-172-31-5-213 systemd[1]: var-lib-docker-overlay2-67e72e9ce8fab3128ba8aaedfa1b06e573fd6953ef7d985af1c4632456dd803d\x2dinit-merged.mount: Deactivated successfully.
+Jul  6 22:37:05 ip-172-31-5-213 systemd[1]: Started libcontainer container 6f2478f14e23bcafb8e27c857a82be2c8856a9886dd8e1bf2db27db0fa3e16b4.
+Jul  6 22:37:05 ip-172-31-5-213 kernel: [ 5349.651442] eth0: renamed from veth6e05b4f
+Jul  6 22:37:05 ip-172-31-5-213 kernel: [ 5349.657002] br-285ca4195c4f: port 1(veth7e75d63) entered blocking state
+Jul  6 22:37:05 ip-172-31-5-213 kernel: [ 5349.657009] br-285ca4195c4f: port 1(veth7e75d63) entered forwarding state
+Jul  6 22:37:05 ip-172-31-5-213 systemd-networkd[323]: veth7e75d63: Gained carrier
+Jul  6 22:37:05 ip-172-31-5-213 systemd-networkd[323]: br-285ca4195c4f: Gained carrier
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.836722] eth0: renamed from veth626f024
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.844966] eth0: renamed from veth0c4e8ea
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.851098] br-285ca4195c4f: port 3(veth171d80d) entered blocking state
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.851121] br-285ca4195c4f: port 3(veth171d80d) entered forwarding state
+Jul  6 22:37:06 ip-172-31-5-213 systemd-networkd[323]: veth171d80d: Gained carrier
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.857793] eth0: renamed from veth3b11dc0
+Jul  6 22:37:06 ip-172-31-5-213 systemd-networkd[323]: veth7d413d2: Gained carrier
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.862700] br-285ca4195c4f: port 2(veth7d413d2) entered blocking state
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.862706] br-285ca4195c4f: port 2(veth7d413d2) entered forwarding state
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.864766] br-285ca4195c4f: port 4(veth46330ce) entered blocking state
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5349.864771] br-285ca4195c4f: port 4(veth46330ce) entered forwarding state
+Jul  6 22:37:06 ip-172-31-5-213 systemd-networkd[323]: veth46330ce: Gained carrier
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5350.107803] br-285ca4195c4f: port 5(veth63f13d8) entered blocking state
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5350.107812] br-285ca4195c4f: port 5(veth63f13d8) entered disabled state
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5350.107844] veth63f13d8: entered allmulticast mode
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5350.107923] veth63f13d8: entered promiscuous mode
+Jul  6 22:37:06 ip-172-31-5-213 networkd-dispatcher[374]: WARNING:Unknown index 118 seen, reloading interface list
+Jul  6 22:37:06 ip-172-31-5-213 systemd-networkd[323]: veth63f13d8: Link UP
+Jul  6 22:37:06 ip-172-31-5-213 dockerd[651]: time="2025-07-06T22:37:06.322241290Z" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Jul  6 22:37:06 ip-172-31-5-213 systemd[1]: Started libcontainer container 8b13c282706485255bcc8c5eaba4d8c01a07455f3ebdcde7bc3f795eb8cd90aa.
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5350.692247] eth0: renamed from veth1c4b658
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5350.699217] br-285ca4195c4f: port 5(veth63f13d8) entered blocking state
+Jul  6 22:37:06 ip-172-31-5-213 kernel: [ 5350.699223] br-285ca4195c4f: port 5(veth63f13d8) entered forwarding state
+Jul  6 22:37:06 ip-172-31-5-213 systemd-networkd[323]: veth63f13d8: Gained carrier
+Jul  6 22:37:07 ip-172-31-5-213 systemd-networkd[323]: veth171d80d: Gained IPv6LL
+Jul  6 22:37:07 ip-172-31-5-213 systemd-networkd[323]: veth46330ce: Gained IPv6LL
+Jul  6 22:37:07 ip-172-31-5-213 systemd-networkd[323]: br-285ca4195c4f: Gained IPv6LL
+Jul  6 22:37:07 ip-172-31-5-213 systemd-networkd[323]: veth7e75d63: Gained IPv6LL
+Jul  6 22:37:07 ip-172-31-5-213 systemd-networkd[323]: veth7d413d2: Gained IPv6LL
+Jul  6 22:37:08 ip-172-31-5-213 systemd-networkd[323]: veth63f13d8: Gained IPv6LL
